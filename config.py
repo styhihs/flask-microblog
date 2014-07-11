@@ -25,3 +25,6 @@ MAIL_PASSWORD = None
 
 # administrator list
 ADMINS = ['styhihs@gmail.com']
+
+# pagination
+POSTS_PER_PAGE = 2
