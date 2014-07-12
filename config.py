@@ -28,3 +28,7 @@ ADMINS = ['styhihs@gmail.com']
 
 # pagination
 POSTS_PER_PAGE = 2
+
+# full text search database
+WHOOSH_BASE = os.path.join(basedir, 'search.db')
+MAX_SEARCH_RESULTS = 30
