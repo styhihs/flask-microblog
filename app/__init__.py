@@ -5,8 +5,11 @@ from flask.ext.login import LoginManager
 from flask.ext.openid import OpenID
 from flask.ext.mail import Mail
 from config import basedir, ADMINS, MAIL_SERVER, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD
+from momentjs import momentjs
 
 app = Flask(__name__)
+
+app.jinja_env.globals['momentjs'] = momentjs
 app.config.from_object('config')
 db = SQLAlchemy(app)
 lm = LoginManager()
